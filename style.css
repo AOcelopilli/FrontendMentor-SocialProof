@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap");
+
+:root {
+  --magenta-main: hsl(303, 10%, 53%);
+  --magenta-light: hsl(300, 24%, 96%);
+  --magenta-dark: hsl(300, 43%, 22%);
+  --pink-main: hsl(333, 80%, 67%);
+  --white-main: White: hsl(0, 0%, 100%);
+}
+
+*,*::before,*::after{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  color: var(--magenta-main);
+  font-family: "Spartan", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+body{
+  padding: 0 1rem;
+  background: var(--white-main);
+}
+
+/* welcome */
+
+#welcome{
+  text-align: center;
+  margin-top: 2rem;
+  padding: 1rem 0;
+}
+
+#welcome h1{
+  color: var(--magenta-dark);
+  font-weight: bolder;
+  padding: 1rem 0;
+}
+
+#welcome p{
+  font-weight: 500;
+  word-spacing: 0.2rem;
+  padding: 1rem 0;
+}
+
+/* stats */
+.stats{
+  width: 100%;
+}
+
+.stat{
+  background-color: var(--magenta-light);
+  border-radius: 0.5rem;
+  color: var(--magenta-dark);
+  text-align: center;
+  margin: 1rem auto;
+  padding: 0.5rem 0;
+  font-weight: bold;
+  width: 100%;
+}
+
+.stat::before{
+  content: url(images/icon-star.svg) " " url(images/icon-star.svg) " " url(images/icon-star.svg) " " url(images/icon-star.svg) " " url(images/icon-star.svg);
+  display: block;
+  padding: 0.5rem 0;
+}
+
+/* comments */
+
+.comments {
+  margin-top: 1rem;
+}
