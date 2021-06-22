@@ -164,10 +164,10 @@ body::after{
   .stat{
     display: flex;
     justify-content: space-evenly;
-  margin: calc(1rem + 0.5vh) auto;
-  padding: calc(0.5rem + 0.5vh) 0;
-  font-weight: bold;
-  min-width: 400px;
+    margin: calc(0.25rem + 1vh) auto;
+    padding: calc(1rem + 1vh) auto;
+    font-weight: bold;
+    min-width: 400px;
 }
 
 .stat::before{
@@ -177,17 +177,17 @@ body::after{
 }
 
   .comments{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
     grid-column: 1/6;
     grid-row: 2/3;
+    grid-template-columns: repeat(3, 1fr);
+    width: 90%;
   }
 
   .buyer-card{
     margin: auto 1rem;
     border-radius: 0.5rem;
     padding: 0;
-    flex: 1 1 150px
+    height: 100%;
   }
 }
