@@ -30,19 +30,19 @@ body{
 
 #welcome{
   text-align: center;
-  margin-top: 2rem;
   padding: 1rem 0;
 }
 
 #welcome h1{
   color: var(--magenta-dark);
   font-weight: bolder;
+  font-size: clamp(2.2rem, 50% , 3.5rem);
   padding: 1rem 0;
 }
 
 #welcome p{
   font-weight: 500;
-  word-spacing: 0.2rem;
+  line-height: calc(1.5rem + 0.5vh);
   padding: 1rem 0;
 }
 
@@ -56,8 +56,8 @@ body{
   border-radius: 0.5rem;
   color: var(--magenta-dark);
   text-align: center;
-  margin: 1rem auto;
-  padding: 0.5rem 0;
+  margin: calc(1rem + 1vh) auto;
+  padding: calc(0.5rem + 1vh) 0;
   font-weight: bold;
   width: 100%;
 }
@@ -65,11 +65,48 @@ body{
 .stat::before{
   content: url(images/icon-star.svg) " " url(images/icon-star.svg) " " url(images/icon-star.svg) " " url(images/icon-star.svg) " " url(images/icon-star.svg);
   display: block;
-  padding: 0.5rem 0;
+  padding: calc(0.2rem + 1vh) 0;
 }
 
 /* comments */
 
 .comments {
   margin-top: 1rem;
+}
+
+.buyer-card{
+  background-color: var(--magenta-dark);
+  color: var(--magenta-light);
+  border-radius: 1rem;
+  margin: 1rem auto;
+  padding: 1rem;
+}
+
+.buyer-info{
+  align-items: center;
+  display: flex;
+  justify-content: flex-start;
+  padding: 1rem 0;
+}
+
+.buyer-info img{
+  border-radius: 50%;
+  width: 15%;
+  margin: 0 1rem;
+}
+
+.buyer-data h2{
+  font-size: 1rem;
+  padding-bottom: calc(0.1rem + 1vh);
+}
+
+.buyer-data span{
+  color: var(--pink-main);
+  font-size: 0.9rem;
+}
+
+.opinion{
+  padding: 1rem;
+  word-spacing: 0.5rem;
+  font-size: 0.9rem;
 }
