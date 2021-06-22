@@ -22,8 +22,24 @@ html{
 }
 
 body{
-  padding: 0 1rem;
   background: var(--white-main);
+  min-height: 100vh;
+  position: relative;
+  padding: 0 1rem;
+}
+
+body::before, body::after{
+  content: url(images/bg-pattern-top-mobile.svg);
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+body::after{
+  content: url(images/bg-pattern-bottom-mobile.svg);
+  right: 0;
+  bottom: 0;
 }
 
 /* welcome */
@@ -31,6 +47,7 @@ body{
 #welcome{
   text-align: center;
   padding: 1rem 0;
+  padding-top: 4rem;
 }
 
 #welcome h1{
@@ -72,6 +89,8 @@ body{
 
 .comments {
   margin-top: 1rem;
+  padding-bottom: 4rem;
+
 }
 
 .buyer-card{
