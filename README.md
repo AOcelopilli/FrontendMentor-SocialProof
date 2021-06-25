@@ -60,7 +60,7 @@ Right now I'm practicing Flexbox and Grid, I'd like start to practice some frame
 
 ## Author
 
-+ Website - [angelpineda](https://www.angelpineda.com.mx)
++ Website - [www.angelpineda.com.mx](https://www.angelpineda.com.mx)
 + Frontend Mentor - [@angelp495](https://www.frontendmentor.io/profile/angelp495)
 + Twitter - [@AOcelopilli](https://twitter.com/AOcelopilli)
 
